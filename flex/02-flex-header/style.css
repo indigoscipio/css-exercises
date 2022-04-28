@@ -1,14 +1,38 @@
-.header  {
+*{
+  
+}
+
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.header ul{
+  display: flex;
+  gap: 16px;
+  padding: inherit;
+  
 }
 
 .logo {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 900;
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 16px;
+}
+
+.left-links{
+  margin-left: 1em;
+}
+
+.right-links{
+  margin-right: 1em;
 }
 
 ul {
