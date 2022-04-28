@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+}
 
 html, body {
   height: 100%;
@@ -16,33 +18,38 @@ body {
 }
 
 .modal {
+  padding: 1em;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 1em;
 }
+
 
 .icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 16px;
   height: 24px;
-  width: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,6 +58,16 @@ body {
 button {
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.header{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: .7em;
+}
+
+.text{
+  margin-bottom: .7em;
 }
 
 button.continue {
